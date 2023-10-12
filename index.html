@@ -20,8 +20,10 @@
       /* exported handleSignoutClick */
 
       // TODO(developer): Set to client ID and API key from the Developer Console
+      // *******************Use your client id******************
       const CLIENT_ID =
         "215924250373-33vpnahbr9nji9m7o7qpi4rtn0teefri.apps.googleusercontent.com";
+      // *******************Use your api key******************
       const API_KEY = "AIzaSyA0cQ-SoT9IA-W90Bi3wu0OKnxQs3KK-vw";
 
       // Discovery doc URL for APIs used by the quickstart
@@ -161,7 +163,7 @@
         // https://developers.google.com/calendar/quickstart/js
         // Change the scope to 'https://www.googleapis.com/auth/calendar' and delete any
         // stored credentials.
-
+        //************ here event can be created*************
         const event = {
           summary: "Test Event Creation",
           location: "Faridpur, Dhaka, Bangladesh",
@@ -196,6 +198,7 @@
         request.execute(function (event) {
           appendPre("Event created: " + event.htmlLink);
         });
+        //************ here event can be created code end*************
       }
     </script>
     <script
